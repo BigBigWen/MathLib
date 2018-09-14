@@ -1,0 +1,23 @@
+{
+  "name": "@bacon-zhang/mathlib",
+  "version": "0.0.1",
+  "description": "Delightul methods for processing numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaconZhang/MathLib.git"
+  },
+  "keywords": [
+    "javascript",
+    "number"
+  ],
+  "author": "BaconZhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BaconZhang/MathLib/issues"
+  },
+  "homepage": "https://github.com/BaconZhang/MathLib#readme"
+}
