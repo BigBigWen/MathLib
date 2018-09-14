@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for MathLib/src/calculate.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">MathLib/src</a> calculate.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">32.43% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>12/37</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/34</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">46.15% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>12/26</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { isNumber, toNumber, compose, filterNumber } from './lib';
+&nbsp;
+const add = <span class="fstat-no" title="function not covered" >(a</span>, b) =&gt;
+<span class="cstat-no" title="statement not covered" >  isNumber(a) &amp;&amp; isNumber(b) ? toNumber(a) + toNumber(b) : NaN;</span>
+const minus = <span class="fstat-no" title="function not covered" >(a</span>, b) =&gt;
+<span class="cstat-no" title="statement not covered" >  isNumber(a) &amp;&amp; isNumber(b) ? toNumber(a) - toNumber(b) : NaN;</span>
+const multiply = <span class="fstat-no" title="function not covered" >(a</span>, b) =&gt;
+<span class="cstat-no" title="statement not covered" >  isNumber(a) &amp;&amp; isNumber(b) ? toNumber(a) * toNumber(b) : NaN;</span>
+const divide = <span class="fstat-no" title="function not covered" >(a</span>, b) =&gt;
+<span class="cstat-no" title="statement not covered" >  isNumber(a) &amp;&amp; isNumber(b) &amp;&amp; toNumber(b) !== 0 ? a / b : NaN;</span>
+const abs = <span class="fstat-no" title="function not covered" >a </span>=&gt; (<span class="cstat-no" title="statement not covered" >isNumber(a) ? Math.abs(a) : NaN)</span>;
+const sqrt = <span class="fstat-no" title="function not covered" >a </span>=&gt; (<span class="cstat-no" title="statement not covered" >isNumber(a) &amp;&amp; a &gt;= 0 ? Math.sqrt(a) : NaN)</span>;
+&nbsp;
+const percent = <span class="fstat-no" title="function not covered" >(a</span>, b) =&gt;
+<span class="cstat-no" title="statement not covered" >  isNumber(a) &amp;&amp; isNumber(b) &amp;&amp; toNumber(b) !== 0</span>
+    ? compose(<span class="fstat-no" title="function not covered" >nu</span>m =&gt; <span class="cstat-no" title="statement not covered" >multiply(num, 100),</span> <span class="fstat-no" title="function not covered" >({</span> a, b }) =&gt; <span class="cstat-no" title="statement not covered" >divide(a, b))</span>({ a, b })
+    : NaN;
+const sum = <span class="fstat-no" title="function not covered" >se</span>t =&gt;
+<span class="cstat-no" title="statement not covered" >  compose(</span>
+<span class="fstat-no" title="function not covered" >    se</span>t =&gt;
+<span class="cstat-no" title="statement not covered" >      set.length ? set.reduce(<span class="fstat-no" title="function not covered" >(p</span>rev, cur) =&gt; <span class="cstat-no" title="statement not covered" >prev + toNumber(cur),</span> 0) : NaN,</span>
+<span class="fstat-no" title="function not covered" >    se</span>t =&gt; <span class="cstat-no" title="statement not covered" >filterNumber(set)</span>
+  )(set);
+const average = <span class="fstat-no" title="function not covered" >se</span>t =&gt;
+<span class="cstat-no" title="statement not covered" >  Array.isArray(set) &amp;&amp; set.length</span>
+    ? compose(<span class="fstat-no" title="function not covered" >su</span>m =&gt; <span class="cstat-no" title="statement not covered" >divide(sum, set.length),</span> <span class="fstat-no" title="function not covered" >se</span>t =&gt; <span class="cstat-no" title="statement not covered" >sum(set))</span>(set)
+    : NaN;
+const monthOnMonth = <span class="fstat-no" title="function not covered" >(a</span>, b) =&gt;
+<span class="cstat-no" title="statement not covered" >  compose(<span class="fstat-no" title="function not covered" >nu</span>m =&gt; <span class="cstat-no" title="statement not covered" >percent(num, abs(b)),</span> <span class="fstat-no" title="function not covered" >({</span> a, b }) =&gt; <span class="cstat-no" title="statement not covered" >minus(a, b))</span>({ a, b });</span>
+const max = <span class="fstat-no" title="function not covered" >se</span>t =&gt;
+<span class="cstat-no" title="statement not covered" >  compose(<span class="fstat-no" title="function not covered" >se</span>t =&gt; <span class="cstat-no" title="statement not covered" >Math.max(...set),</span> <span class="fstat-no" title="function not covered" >se</span>t =&gt; <span class="cstat-no" title="statement not covered" >filterNumber(set))</span>(set);</span>
+const min = <span class="fstat-no" title="function not covered" >se</span>t =&gt;
+<span class="cstat-no" title="statement not covered" >  compose(<span class="fstat-no" title="function not covered" >se</span>t =&gt; <span class="cstat-no" title="statement not covered" >Math.min(...set),</span> <span class="fstat-no" title="function not covered" >se</span>t =&gt; <span class="cstat-no" title="statement not covered" >filterNumber(set))</span>(set);</span>
+&nbsp;
+export default {
+  add,
+  minus,
+  multiply,
+  divide,
+  percent,
+  sum,
+  average,
+  monthOnMonth,
+  abs,
+  sqrt,
+  max,
+  min
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Sep 14 2018 13:09:56 GMT+0800 (CST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
