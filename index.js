@@ -1,6 +1,6 @@
-import calculate from './calculate';
-import display from './display';
-import { isNumber, compose, toNumber, filterNumber } from './lib';
+import calculate from './src/calculate';
+import display from './src/display';
+import { isNumber, compose, toNumber, filterNumber } from './src/lib';
 
 export default {
   ...calculate,
